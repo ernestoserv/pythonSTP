@@ -21,8 +21,8 @@ def sign(cadena, ruta):
     return signature_b64
 
 
-cadena = "||CLUB_DE_RENTAS|E|||"
-ruta = "/Users/claudiaeenriquezgracia/Documents/STP/llave_privada_cdr.pem"
+cadena = "||Nombre_De _tu_empresa|E|||"
+ruta = "Ruta a llave privada pem"
 # password = "#cdr1234"
 resultado = sign(cadena, ruta)
 #print(resultado)
@@ -32,7 +32,7 @@ headers = {
     "Encoding": "UTF-8"
 }
 data = {
-    "empresa": "CLUB_DE_RENTAS",
+    "empresa": "Nombre_De_tu_empresa",
     "page": 0,
     "tipoOrden": "E",
     "firma": resultado,  # firma_encirptada
