@@ -39,4 +39,4 @@ data = {
 }
 
 respuesta_stp = requests.post(url, headers=headers, json=data)
-print(respuesta_stp.text)
+print(respuesta_stp.json())
